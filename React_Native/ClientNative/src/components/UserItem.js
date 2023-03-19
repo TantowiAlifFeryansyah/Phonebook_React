@@ -68,10 +68,7 @@ export default function UserItem(props) {
                     <View style={styles.cardList}>
                         <View style={{
                             flexDirection: 'row',
-                            // borderWidth: 1,
-                            // flex: 1, 
                             width: "80%",
-                            // justifyContent: 'center',
                             alignItems: 'center',
                                 }}>
                             <View style={styles.number}>
@@ -88,6 +85,7 @@ export default function UserItem(props) {
                                         placeholder="Masukan Nama!"
                                         onChangeText={name => setUser({ ...user, name })}
                                         defaultValue={user.name}
+                                        autoFocus={true}
                                     />
                                     :
                                     <View>
