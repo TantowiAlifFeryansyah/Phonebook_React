@@ -26,7 +26,6 @@ export default function UserList(props) {
     const scrolling = useCallback((event) => {
         var element = event.target;
         if (element.scrollHeight - element.scrollTop === element.clientHeight) {
-            // console.log('ini scroll');
             dispatch(loadUserAsync())
         }
     }, [dispatch])
@@ -36,9 +35,9 @@ export default function UserList(props) {
             <table className="table table-striped">
                 <thead>
                     <tr>
-                        <th> # </th>
+                        <th> No </th>
                         <th> Name </th>
-                        <th> Phones </th>
+                        <th> Phone </th>
                         <th> Actions </th>
                     </tr>
                 </thead>
